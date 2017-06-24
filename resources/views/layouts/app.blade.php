@@ -26,7 +26,7 @@
                     <a href="#" class="nav-item is-tab is-hidden-mobile">Share</a>
                 </div>
                 <div class="nav-right" style="overflow: visible">
-                    @if(!Auth::guest())
+                    @if(Auth::guest())
                         <a href="" class="nav-item is-tab">Login</a>
                         <a href="" class="nav-item is-tab">Join the Community </a>
                     @else
