@@ -1,7 +1,15 @@
-.dropdown{
-  position:relative;
-  .dropdown-menu{
-    display:none;
+//Text Overrides
+.is-muted{
+  color: $grey-light !important;
+}
+
+
+
+.dropdown {
+  position: relative;
+
+  .dropdown-menu {
+    display: none;
     position: absolute;
     left: 0;
     top: 104%;
@@ -11,34 +19,34 @@
     text-align: left;
     box-shadow: 0 001px rgba(57, 70, 78, .15), 0 20px 55px -8px rgba(57, 70, 78, .25);
 
-    li{
-      &.seperator{
+    li {
+      &.seperator {
         border-top: 1px solid #ccc;
-        margin:5px 0;
+        margin: 5px 0;
 
       }
-      &>a{
+      & > a {
         margin: 5px 0;
         padding: 5px 5px 0 15px;
         display: block;
 
-        &:hover{
+        &:hover {
           background-color: whitesmoke;
         }
       }
     }
 
   }
-  &.is-aligned-right .dropdown-menu{
-    right:0;
-    left:auto;
+  &.is-aligned-right .dropdown-menu {
+    right: 0;
+    left: auto;
   }
-  
-  &.is-open .dropdown-menu{
+
+  &.is-open .dropdown-menu {
     display: block;
   }
-}
 
+}
 /* ========================================
    =========== Nav Item Override ==========
    ======================================== */
